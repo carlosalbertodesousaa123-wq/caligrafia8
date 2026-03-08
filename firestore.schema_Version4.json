@@ -1,0 +1,56 @@
+{
+  "modules": {
+    "module_1": {
+      "id": "module_1",
+      "title": "Fundamentos de la escritura",
+      "order": 1,
+      "description": "Psicología, postura, fisiología y control de presión.",
+      "lessons": [
+        {
+          "id": "m1_l1",
+          "title": "Postura correcta",
+          "contentType": "article",
+          "content": "Texto / HTML / referencia a assets",
+          "durationMinutes": 10
+        },
+        {
+          "id": "m1_e1",
+          "title": "Ejercicio: Trazos básicos",
+          "contentType": "exercise",
+          "exerciseRef": "exercise_stroke_basics",
+          "expectedTimeMinutes": 10
+        }
+      ],
+      "assets": ["templates/postura.pdf"],
+      "tags": ["fundamentos"]
+    }
+  },
+  "exercises": {
+    "exercise_stroke_basics": {
+      "id": "exercise_stroke_basics",
+      "title": "Trazos básicos",
+      "type": "guided-trace",
+      "steps": [
+        {"step": 1, "instruction": "Dibuja líneas rectas 10 veces"},
+        {"step": 2, "instruction": "Dibuja curvas 10 veces"}
+      ],
+      "durationMinutes": 10,
+      "sampleAssets": ["templates/trazos_basicos.pdf"]
+    }
+  },
+  "userProgress": {
+    "user_abc123": {
+      "modulesCompleted": ["module_1"],
+      "exercisesCompleted": {
+        "m1_e1": {
+          "completedAt": "2026-03-05T14:00:00Z",
+          "timeSpentSeconds": 600,
+          "notes": "Mejoré el control de presión"
+        }
+      },
+      "streakDays": 7,
+      "lastPractice": "2026-03-07T10:00:00Z",
+      "achievements": ["first_week"]
+    }
+  }
+}
